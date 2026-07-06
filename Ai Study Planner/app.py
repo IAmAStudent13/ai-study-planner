@@ -4,7 +4,7 @@ import requests
 
 app = Flask(__name__)
 
-OPENAI_API_KEY = "YOUR_API_KEY"
+OPENAI_API_KEY = "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"
 
 @app.route("/ai", methods=["POST"])
 def ai():

@@ -4,7 +4,9 @@ import requests
 
 app = Flask(__name__)
 
-OPENAI_API_KEY = ""
+import os
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 @app.route("/ai", methods=["POST"])
 def ai():
